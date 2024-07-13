@@ -2,7 +2,7 @@
   "name": "kangusjunkremoval",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel build index.html"
   },
   "devDependencies": {
     "parcel": "^2.0.0"
