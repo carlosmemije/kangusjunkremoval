@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./imgs/logo3.jpg" alt="Logo" id="logo" />
+        <a>Kangu's Junk Removal</a>
+        <a href="tel:9512163231" class="phone">951-216-3231</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="slideshow-container">
+        <div class="slides fade">
+          <img src="./imgs/logo2.jpg" />
+        </div>
+        <div class="slides fade">
+          <img src="./imgs/2.jpg" />
+        </div>
+        <div class="slides fade">
+          <img src="./imgs/3.jpg" />
+        </div>
+        <div class="slides fade">
+          <img src="./imgs/4.jpg" />
+        </div>
+        <div class="slides fade">
+          <img src="./imgs/1.jpg" />
+        </div>
+        <div class="slides fade">
+          <img src="./imgs/logo1.jpg" />
+        </div>
+      </div>
+      <br />
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1240904455367!2d-116.96147032359266!3d33.78329357325962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db699e1111b647%3A0xdf1893d9ef000e!2sKangu&#39;s%20Junk%20Removal!5e0!3m2!1sen!2sus!4v1720828457945!5m2!1sen!2sus"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <h4>
+        We are servicing out of San Jacinto but offer our services to all
+        neighboring cities!
+      </h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212204.16546979456!2d-117.15371207595246!3d33.79450044316986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db6378cc805917%3A0x96d46fdc21b541e4!2sSan%20Jacinto%2C%20CA!5e0!3m2!1sen!2sus!4v1720816840568!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <a href="tel:9512163231" class="phone">951-216-3231</a>
+      <form id="contactForm" enctype="multipart/form-data" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="image">Upload an Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="./imgs/fb.png" alt="Facebook" />
+        </a>
+        <a
+          href="https://www.instagram.com/kangu.junk.removal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+        >
+          <img src="./imgs/insta.jpg" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.yelp.com/biz/kangu-s-junk-removal-riverside-2?uid=0GFXEXyfmQ_ln27YxQn9tQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)
+
+        "
+          target="_blank"
+        >
+          <img src="./imgs/yelp.jpg" alt="Yelp" />
+        </a>
+        <a href="https://g.page/r/CQ4A79mTGN8AEAE/review" target="_blank">
+          <img src="./imgs/g.jpg" alt="Google" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
